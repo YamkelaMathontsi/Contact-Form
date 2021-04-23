@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./glass.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- FORM -->
+    <form
+      action="https://formspree.io/f/xpzkwbye"
+      method="POST"
+      id="contact-form"
+    >
+      <!-- NAME -->
+      <h1 class="contact-heading">contact me</h1>
+
+      <div>
+        <label for="name" class="contact-info">name</label>
+        <input
+          type="text"
+          id="name"
+          required
+          name="name"
+          class="contact-input"
+          placeholder="full name"
+        />
+      </div>
+      <!-- EMAIL -->
+      <div>
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="name@domain.com"
+          id="email"
+          class="contact-input"
+        />
+      </div>
+
+      <!-- NUMBER -->
+      <div>
+        <label for="number">phone number</label>
+        <input
+          type="text"
+          name="message"
+          required
+          placeholder="071 123 4567"
+          class="contact-input"
+        />
+      </div>
+
+      <!-- MESSAGE -->
+      <div>
+        <label for="message">message</label>
+        <input
+          type="text"
+          name="message"
+          placeholder="Type in your message"
+          class="contact-input"
+        />
+      </div>
+      <div class="button-groups">
+        <button class="button">Submit</button>
+        <button class="button">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
